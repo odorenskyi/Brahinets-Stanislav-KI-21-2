@@ -57,9 +57,3 @@ void DecHexNumber(int x, int y, int z)
          << "\t'z' В шістнадцятковій: " << hex << z << endl << endl;
 
 }
-
-
-
-
-
-
