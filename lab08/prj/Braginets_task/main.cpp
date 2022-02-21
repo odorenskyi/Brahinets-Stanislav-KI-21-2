@@ -19,9 +19,9 @@ int main()
     system("chcp 1251 && cls");
     copyright();
 
-    cout << "Ââåä³òü x, y, z: ";
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ x, y, z: ";
     cin >> x >> y >> z;
-    cout << "Ââåä³òü 'a' òà 'b': ";
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ 'a' Ñ‚Ð° 'b': ";
     cin >> a >> b;
 
     cout << endl;
@@ -29,7 +29,7 @@ int main()
     expression(a, b);
     DecHexNumber(x, y, z);
 
-    cout << "Ðåçóëüòàò âèêîíàííÿ ôóíêö³é: S = " << s_calculation(x, y, z) << endl;
+    cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ Ñ„ÑƒÐ½ÐºÑ†Ñ–Ð¹: S = " << s_calculation(x, y, z) << endl;
     getch();
 
     return 0;
@@ -38,23 +38,23 @@ int main()
 
 void copyright()
 {
-    cout << "© Áðàã³íåöü Ñòàí³ñëàâ" << endl << endl;
+    cout << "Â© Ð‘Ñ€Ð°Ð³Ñ–Ð½ÐµÑ†ÑŒ Ð¡Ñ‚Ð°Ð½Ñ–ÑÐ»Ð°Ð²" << endl << endl;
 }
 
 void expression(char a, char b)
 {
     bool expression = abs(a - 22) <= b + 5;
-    cout << noboolalpha << "Ðåçóëüòàò |a - 22| <= b + 5: " << expression << endl << endl;
+    cout << noboolalpha << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ |a - 22| <= b + 5: " << expression << endl << endl;
 }
 
 void DecHexNumber(int x, int y, int z)
 {
-    cout << "'x' Â äåñÿòêîâ³é: " << dec << x
-         << "\t'x' Â ø³ñòíàäöÿòêîâ³é: " << hex << x << endl;
-    cout << "'y' Â äåñÿòêîâ³é: " << dec << y
-         << "\t'y' Â ø³ñòíàäöÿòêîâ³é: " << hex << y << endl;
-    cout << "'z' Â äåñÿòêîâ³é: " << dec << z
-         << "\t'z' Â ø³ñòíàäöÿòêîâ³é: " << hex << z << endl << endl;
+    cout << "'x' Ð’ Ð´ÐµÑÑÑ‚ÐºÐ¾Ð²Ñ–Ð¹: " << dec << x
+         << "\t'x' Ð’ ÑˆÑ–ÑÑ‚Ð½Ð°Ð´Ñ†ÑÑ‚ÐºÐ¾Ð²Ñ–Ð¹: " << hex << x << endl;
+    cout << "'y' Ð’ Ð´ÐµÑÑÑ‚ÐºÐ¾Ð²Ñ–Ð¹: " << dec << y
+         << "\t'y' Ð’ ÑˆÑ–ÑÑ‚Ð½Ð°Ð´Ñ†ÑÑ‚ÐºÐ¾Ð²Ñ–Ð¹: " << hex << y << endl;
+    cout << "'z' Ð’ Ð´ÐµÑÑÑ‚ÐºÐ¾Ð²Ñ–Ð¹: " << dec << z
+         << "\t'z' Ð’ ÑˆÑ–ÑÑ‚Ð½Ð°Ð´Ñ†ÑÑ‚ÐºÐ¾Ð²Ñ–Ð¹: " << hex << z << endl << endl;
 
 }
 
