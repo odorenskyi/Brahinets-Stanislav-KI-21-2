@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1647502370 source:d:\stas\алор\brahinets-stanislav-ki-21-2\lab09\prj\braginets_task\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	"ModulesBraginets.h"
+
