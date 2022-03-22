@@ -71,5 +71,6 @@ int main()
         else
             cout << count_bit(bit_num[i]) << endl << "#" << i + 1 << " Failed" << endl;
     }
+    system("pause");
     return 0;
 }

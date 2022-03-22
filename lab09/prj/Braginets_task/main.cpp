@@ -110,6 +110,7 @@ int main()
         cin >> symbol;
     }
     cout << "Дякую!!" << endl;
+    system("pause");
 
     return 0;
 }
