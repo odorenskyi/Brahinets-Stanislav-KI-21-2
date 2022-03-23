@@ -10,7 +10,7 @@ int main()
     system("chcp 1251 && cls");
     char symbol;
 
-    cout << "Âèáåð³òü ñèìâîë!" << endl
+    cout << "Ð’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ ÑÐ¸Ð¼Ð²Ð¾Ð»!" << endl
          << "n) s_calculation       v) count_electrycity" << endl
          << "c) count_tempreture    x) count_bit" << endl
          << "z or Z) exit" << endl;
@@ -25,7 +25,7 @@ int main()
             cin.clear();              // free up the space in streaming input
             while (cin.get() != '\n')
                 continue;
-            cout << "\aÂâåä³òü ñèìâîë n, v, c, x, z or Z: ";
+            cout << "\aÐ’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÑÐ¸Ð¼Ð²Ð¾Ð» n, v, c, x, z or Z: ";
             cin >> symbol;
         }
 
@@ -37,14 +37,14 @@ int main()
             case 'n':
             {
                 double x, y, z;
-                cout << "Ââåä³òü òðè ÷èñëà: ";
+                cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ‚Ñ€Ð¸ Ñ‡Ð¸ÑÐ»Ð°: ";
 
                 while (!(cin >> x >> y >> z))
                 {
                     cin.clear();
                     while (cin.get() != '\n')
                         continue;
-                    cout << "Âè ââåëè íå ÷èñëî, ñïðîáóéòå ùå ðàç: ";
+                    cout << "Ð’Ð¸ Ð²Ð²ÐµÐ»Ð¸ Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾, ÑÐ¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ñ‰Ðµ Ñ€Ð°Ð·: ";
                 }
                 cout << "S = " << setprecision(9) << s_calculation(x, y, z) << endl;
                 break;
@@ -52,7 +52,7 @@ int main()
             case 'v':
             {
                 float electrycity;
-                cout << "Ââåä³òü ê³ëüê³ñòü ñïîæèòî¿ åëåêòðîåíåðã³¿ (êÂò/ãîò): ";
+                cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ ÑÐ¿Ð¾Ð¶Ð¸Ñ‚Ð¾Ñ— ÐµÐ»ÐµÐºÑ‚Ñ€Ð¾ÐµÐ½ÐµÑ€Ð³Ñ–Ñ— (ÐºÐ’Ñ‚/Ð³Ð¾Ñ‚): ";
 
                 while (!(cin >> electrycity) || electrycity < 0)
                 {
@@ -60,7 +60,7 @@ int main()
 
                     while (cin.get() != '\n')
                         continue;
-                    cout << "Âè ââåëè íåêîðåêòíî, ñïðîáóéòå ùå ðàç: ";
+                    cout << "Ð’Ð¸ Ð²Ð²ÐµÐ»Ð¸ Ð½ÐµÐºÐ¾Ñ€ÐµÐºÑ‚Ð½Ð¾, ÑÐ¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ñ‰Ðµ Ñ€Ð°Ð·: ";
                 }
                 cout << setprecision(9) << round(count_electrycity(electrycity) * 100.0) /100.0 << endl;
                 break;
@@ -73,43 +73,43 @@ int main()
 
                 for (int i = 0; i < Size; i++)
                 {
-                    cout << "Ââåä³òü ñåðåäíþ òåìïåðàòóðó " << i + 1 << " ì³ñÿöÿ: ";
+                    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÑÐµÑ€ÐµÐ´Ð½ÑŽ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ " << i + 1 << " Ð¼Ñ–ÑÑÑ†Ñ: ";
 
                     while (!(cin >> mid_month_temp_cel[i]))
                     {
                         cin.clear();
                         while (cin.get() != '\n')
                             continue;
-                        cout << "Âè ââåëè íåêîðåêòíî, ñïðîáóéòå ùåðàç: ";
+                        cout << "Ð’Ð¸ Ð²Ð²ÐµÐ»Ð¸ Ð½ÐµÐºÐ¾Ñ€ÐµÐºÑ‚Ð½Ð¾, ÑÐ¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ñ‰ÐµÑ€Ð°Ð·: ";
                     }
                 }
                 year_temp = count_tempreture(mid_month_temp_cel, Size);
-                cout << endl << "Ñåðåäíüîð³÷íà òåìïåðàòóðà çà Öåëüñ³ºì: "
+                cout << endl << "Ð¡ÐµÑ€ÐµÐ´Ð½ÑŒÐ¾Ñ€Ñ–Ñ‡Ð½Ð° Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ð·Ð° Ð¦ÐµÐ»ÑŒÑÑ–Ñ”Ð¼: "
                              << round(year_temp.Celcius * 100.0)/100.0 << endl;
-                cout << "Ñåðåäíüîð³÷íà òåìïåðàòóðà çà Ôàðåíãåéòîì: "
+                cout << "Ð¡ÐµÑ€ÐµÐ´Ð½ÑŒÐ¾Ñ€Ñ–Ñ‡Ð½Ð° Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ð·Ð° Ð¤Ð°Ñ€ÐµÐ½Ð³ÐµÐ¹Ñ‚Ð¾Ð¼: "
                      << round(year_temp.Fahrenheit * 100.0)/100.0 << endl;
                 break;
             }
             case 'x':
             {
                 long int num = 0;
-                cout << "Ââåä³òü ö³ëî÷èñåëüíå ÷èñëî: ";
+                cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ†Ñ–Ð»Ð¾Ñ‡Ð¸ÑÐµÐ»ÑŒÐ½Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 
                 while (!(cin >> num) || num < 0 || num > 5740499)
                 {
                     cin.clear();
                     while (cin.get() != '\n')
                         continue;
-                    cout << "Âè ââåëè íåêîðåêòíî, ñïðîáóéòå ùåðàç: ";
+                    cout << "Ð’Ð¸ Ð²Ð²ÐµÐ»Ð¸ Ð½ÐµÐºÐ¾Ñ€ÐµÐºÑ‚Ð½Ð¾, ÑÐ¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ñ‰ÐµÑ€Ð°Ð·: ";
                 }
                 cout << count_bit(num);
                 break;
             }
         }
-        cout << endl << "Ââåä³òü íàñòóïíèé ñèìâîë: ";
+        cout << endl << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð½Ð°ÑÑ‚ÑƒÐ¿Ð½Ð¸Ð¹ ÑÐ¸Ð¼Ð²Ð¾Ð»: ";
         cin >> symbol;
     }
-    cout << "Äÿêóþ!!" << endl;
+    cout << "Ð”ÑÐºÑƒÑŽ!!" << endl;
     system("pause");
 
     return 0;
