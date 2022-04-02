@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1648833018 source:d:\stas\алор\brahinets-stanislav-ki-21-2\lab10\prj\testdriver\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"ModulesBraginets.h"
+
