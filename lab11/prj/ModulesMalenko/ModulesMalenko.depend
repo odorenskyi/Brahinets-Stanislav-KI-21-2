@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1653021557 source:d:\stas\алор\brahinets-stanislav-ki-21-2\lab11\prj\modulesmalenko\main.cpp
+	"ModulesMalenko.h"
+
+1653021617 d:\stas\алор\brahinets-stanislav-ki-21-2\lab11\prj\modulesmalenko\modulesmalenko.h
+	<iostream>
+	<cstring>
+	<string>
+	<fstream>
+	<cctype>
+	<cstdlib>
+	"struct_type_project_3.h"
+
