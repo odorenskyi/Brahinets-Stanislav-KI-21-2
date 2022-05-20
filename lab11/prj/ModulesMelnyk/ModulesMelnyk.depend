@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1653020835 source:d:\stas\алор\brahinets-stanislav-ki-21-2\lab11\prj\modulesmelnyk\main.cpp
+	"ModulesMelnyk.h"
+
+1653020863 d:\stas\алор\brahinets-stanislav-ki-21-2\lab11\prj\modulesmelnyk\modulesmelnyk.h
+	<iostream>
+	<cstring>
+	<string>
+	<fstream>
+	<cctype>
+	<cstdlib>
+	<iomanip>
+	"struct_type_project_3.h"
+
