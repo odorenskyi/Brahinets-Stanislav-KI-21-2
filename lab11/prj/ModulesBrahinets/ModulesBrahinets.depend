@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1652945545 source:d:\stas\алор\brahinets-stanislav-ki-21-2\lab11\prj\modulesbrahinets\main.cpp
+	"ModulesBrahinets.h"
+
+1652897478 d:\stas\алор\brahinets-stanislav-ki-21-2\lab11\prj\modulesbrahinets\modulesbrahinets.h
+	<iostream>
+	<cstring>
+	<string>
+	<fstream>
+	<cctype>
+	<cstdlib>
+	"struct_type_project_3.h"
+
