@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1653022100 source:d:\stas\алор\brahinets-stanislav-ki-21-2\lab11\prj\project_3_braginets\main.cpp
+	<iostream>
+	"ModulesBrahinets.h"
+	"ModulesMelnyk.h"
+	"ModulesMalenko.h"
+
