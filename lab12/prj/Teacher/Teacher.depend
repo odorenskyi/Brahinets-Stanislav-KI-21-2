@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1653733781 source:d:\stas\алор\brahinets-stanislav-ki-21-2\lab12\prj\teacher\main.cpp
+	"Functions.h"
+
+1653724440 source:c:\users\user\desktop\teacher\main.cpp
+	"Functions.h"
+
+1653726435 d:\stas\алор\brahinets-stanislav-ki-21-2\lab12\prj\teacher\functions.h
+	"ModulesBrahinets.h"
+	<iostream>
+	<fstream>
+	<string>
+
+1653726538 d:\stas\алор\brahinets-stanislav-ki-21-2\lab12\prj\teacher\modulesbrahinets.h
+	<cmath>
+	<string>
+

@@ -1,10 +1,12 @@
 #ifndef MODULESBRAHINETS_H_INCLUDED
 #define MODULESBRAHINETS_H_INCLUDED
 
-#include <iostream>
 #include <cmath>
+#include <string>
+
 #define PI 3.14159265359
 
+using namespace std;
 class ClassLab12_Brahinets
 {
 public:
@@ -13,8 +15,8 @@ public:
     float get_cone_height() {return height;}
     float get_cone_volume() {return volume(radius, height);}
 
-    void set_con_radius(float radius);
-    void set_con_height(float height);
+    void set_con_radius(string radius);
+    void set_con_height(string height);
 
 private:
     float radius, height;
@@ -27,20 +29,20 @@ ClassLab12_Brahinets::ClassLab12_Brahinets()
     height = 7.75;
 }
 
-void ClassLab12_Brahinets::set_con_radius(float radius)
+void ClassLab12_Brahinets::set_con_radius(string radius)
 {
-    if (radius < 0)
+    if (stof(radius) < 0)
         this->radius = 0;
     else
-        this->radius = radius;
+        this->radius = stof(radius);
 }
 
-void ClassLab12_Brahinets::set_con_height(float height)
+void ClassLab12_Brahinets::set_con_height(string height)
 {
-    if (height < 0)
+    if (stof(height) < 0)
         this->height = 0;
     else
-        this->height = height;
+        this->height = stof(height);
 }
 
 #endif // MODULESBRAHINETS_H_INCLUDED
