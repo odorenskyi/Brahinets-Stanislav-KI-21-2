@@ -16,9 +16,9 @@ bool followDirectory(char file_name[])
     if (found == string::npos)
     {
         ofstream resultFile(file_name);
-        resultFile << "Âñòàíîâëåí³ âèìîãè ïîðÿäêó âèêîíàííÿ ëàáîðàòîðíî¿ ðîáîòè ïîðóøåíî!" << endl;
+        resultFile << "Ð’ÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ñ– Ð²Ð¸Ð¼Ð¾Ð³Ð¸ Ð¿Ð¾Ñ€ÑÐ´ÐºÑƒ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ Ð»Ð°Ð±Ð¾Ñ€Ð°Ñ‚Ð¾Ñ€Ð½Ð¾Ñ— Ñ€Ð¾Ð±Ð¾Ñ‚Ð¸ Ð¿Ð¾Ñ€ÑƒÑˆÐµÐ½Ð¾!" << endl;
 
-        for (short i = 0; i < 99; i++) {cout << "\a";}
+        for (short i = 0; i < 100; i++) {cout << "\a";}
 
         resultFile.close();
         return false;
@@ -30,12 +30,12 @@ bool isFileOpen (ifstream &example_file, ofstream &result_file)
 {
     if (!example_file.is_open())
     {
-        cout << "Íå ìîæó â³äêðèòè ôàéë ç ïðèêëàäàìè!" << endl;
+        cout << "ÐÐµ Ð¼Ð¾Ð¶Ñƒ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸ Ñ„Ð°Ð¹Ð» Ð· Ð¿Ñ€Ð¸ÐºÐ»Ð°Ð´Ð°Ð¼Ð¸!" << endl;
         return false;
     }
     else if (!result_file.is_open())
     {
-        cout << "Íå ìîæó â³äêðèòè ôàéë äëÿ ïåðåâ³ðêè òåñòóâàííÿ!" << endl;
+        cout << "ÐÐµ Ð¼Ð¾Ð¶Ñƒ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸ Ñ„Ð°Ð¹Ð» Ð´Ð»Ñ Ð¿ÐµÑ€ÐµÐ²Ñ–Ñ€ÐºÐ¸ Ñ‚ÐµÑÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ!" << endl;
         return false;
     }
     else {return true;}
